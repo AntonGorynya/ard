@@ -147,7 +147,7 @@ void loop()
     generate(hz, 120);  
   }
   // режим с установкой частоты
-  if (mode == 2){   
+  if (mode == 2){ 
     if (phase == 0){ 
       lcd.clear();
       lcd.print("choose phase");
@@ -181,6 +181,8 @@ void loop()
           lcd.clear(); 
           sprintf(myStr2,"fix f: %d hz",hz2 ); 
           lcd.print(myStr2);
+          digitalWrite(LED1, LOW);
+          digitalWrite(LED2, LOW);
           delay(tdelay*60*1000);
           generate(hz, 120);
         }     
