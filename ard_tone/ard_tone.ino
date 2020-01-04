@@ -25,12 +25,11 @@ int long i = 0;
 unsigned long time_m = 0;
 unsigned long time_f = 0;
 // в дальнейшем приравниаем к одному из LED
-int LED1;
-int LED2;
+int LED1 = LED_0_1;
+int LED2 = LED_0_2;
 
 char myStr1[15] = {'S', 't', 'a', 'r', 't'};
 char myStr2[15] = {'S', 't', 'a', 'r', 't'};
-
 
 class Flasher
 {
