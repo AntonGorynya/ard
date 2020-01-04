@@ -132,7 +132,10 @@ void loop()
       generate(hz, 5); 
     } 
     hz =0;
+    lcd.clear();
     lcd.print("delay");
+    digitalWrite(LED1, LOW);
+    digitalWrite(LED2, LOW);
     delay(3600000); 
     x = 1 ;
     for (x; x < 5; x = x+1){  
